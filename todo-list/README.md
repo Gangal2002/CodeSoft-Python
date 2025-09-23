@@ -18,7 +18,7 @@ It allows users to **add, edit, mark as done, delete, and track tasks** in a cle
 
 ## 📸 Screenshot  
 
-- **Source Code:** [Open To-Do List App](./todo_gui.py)  
+- Live Demo: [Open Portfolio]()
 
 ### To-Do List App View  
 
