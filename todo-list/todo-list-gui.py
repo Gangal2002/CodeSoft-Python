@@ -74,13 +74,17 @@ def refresh_list():
 # ---------------------- GUI ----------------------
 root = tk.Tk()
 root.title("✅ To-Do List App")
-root.geometry("500x450")
+root.geometry("600x500")
+root.resizable(True, True)  # Allow resizing
 
 tasks = load_tasks()
 
+# ------------------ Heading ------------------
+tk.Label(root, text="📝 My To-Do List", font=("Arial", 20, "bold")).pack(pady=10)
+
 # Input field
-task_entry = tk.Entry(root, width=30, font=("Arial", 14))
-task_entry.pack(pady=10)
+task_entry = tk.Entry(root, width=40, font=("Arial", 14))
+task_entry.pack(pady=10, padx=10)
 
 # Buttons
 btn_frame = tk.Frame(root)
@@ -100,13 +104,13 @@ edit_btn.grid(row=0, column=3, padx=5)
 
 # Scrollbar and Listbox
 list_frame = tk.Frame(root)
-list_frame.pack(pady=10)
+list_frame.pack(pady=10, fill=tk.BOTH, expand=True)
 
 scrollbar = tk.Scrollbar(list_frame)
 scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 
-listbox = tk.Listbox(list_frame, width=60, height=15, font=("Arial", 12), yscrollcommand=scrollbar.set)
-listbox.pack(side=tk.LEFT, fill=tk.BOTH)
+listbox = tk.Listbox(list_frame, font=("Arial", 12), yscrollcommand=scrollbar.set)
+listbox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
 scrollbar.config(command=listbox.yview)
 
