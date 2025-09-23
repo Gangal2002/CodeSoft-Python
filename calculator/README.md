@@ -21,7 +21,7 @@ A clean and responsive **Calculator App** built using **Python (Tkinter)** as pa
 
 ## 📸 Screenshot  
 
-- **Source Code:** [Open Calculator GUI](./calculator_gui.py)  
+- Live Demo: [Open Calculator]()
 
 ### Calculator App View  
 
