@@ -25,6 +25,6 @@ A clean and responsive **Calculator App** built using **Python (Tkinter)** as pa
 
 ### Calculator App View  
 
-<img width="1920" height="1011" alt="Screenshot (81)" src="https://github.com/user-attachments/assets/a2276d90-6120-4b22-9005-66acc0fd2b58" />
+<img width="1920" height="702" alt="Screenshot (85)" src="https://github.com/user-attachments/assets/33f1698b-7376-4b90-9fca-ec445ad1e768" />
 
 ---
