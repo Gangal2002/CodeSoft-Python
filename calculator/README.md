@@ -1,7 +1,6 @@
 # 🧮 Calculator GUI Application  
 
 A clean and responsive **Calculator App** built using **Python (Tkinter)** as part of my internship task at CodeSoft.  
-The layout mirrors my **Web Development calculator**, providing a familiar and professional interface.
 
 ---
 
