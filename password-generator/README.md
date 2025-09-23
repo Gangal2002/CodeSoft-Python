@@ -1,7 +1,7 @@
 # 🔒 Password Generator
 
-A clean and interactive **Password Generator App** built using **Python (Tkinter)** as part of my internship task at CodeSoft.
-The app allows users to **generate strong random passwords**, **copy them to clipboard**, and **check password strength**.
+-A clean and interactive **Password Generator App** built using **Python (Tkinter)** as part of my internship task at CodeSoft.
+-The app allows users to **generate strong random passwords**, **copy them to clipboard**, and **check password strength**.
 
 ---
 
@@ -20,7 +20,7 @@ The app allows users to **generate strong random passwords**, **copy them to cli
 
 ## 📸 Screenshot
 
-
+- Live Demo: [Open Password generator]()
 
 ### Password Generator App View
 
