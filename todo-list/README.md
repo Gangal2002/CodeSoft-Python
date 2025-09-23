@@ -1,4 +1,4 @@
-# 📝 To-Do List GUI Application  
+# 📝 Todo List GUI Application  
 
 A simple and interactive **To-Do List App** built using **Python (Tkinter)** as part of my internship task at CodeSoft.  
 It allows users to **add, edit, mark as done, delete, and track tasks** in a clean and user-friendly interface.  
