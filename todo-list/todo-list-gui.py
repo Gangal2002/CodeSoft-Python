@@ -74,20 +74,26 @@ def refresh_list():
 # ---------------------- GUI ----------------------
 root = tk.Tk()
 root.title("✅ To-Do List App")
-root.geometry("600x500")
-root.resizable(True, True)  # Allow resizing
+root.geometry("500x500")
+root.minsize(500, 500)
+root.maxsize(800, 700)
+root.eval('tk::PlaceWindow . center')  # Center window on screen
 
 tasks = load_tasks()
 
-# ------------------ Heading ------------------
-tk.Label(root, text="📝 My To-Do List", font=("Arial", 20, "bold")).pack(pady=10)
+# ------------------ Top-Centered Frame ------------------
+main_frame = tk.Frame(root)
+main_frame.pack(anchor="n", pady=20)  # Top center with padding
+
+# Heading
+tk.Label(main_frame, text="📝 My To-Do List", font=("Arial", 20, "bold")).pack(pady=10)
 
 # Input field
-task_entry = tk.Entry(root, width=40, font=("Arial", 14))
+task_entry = tk.Entry(main_frame, width=40, font=("Arial", 14))
 task_entry.pack(pady=10, padx=10)
 
 # Buttons
-btn_frame = tk.Frame(root)
+btn_frame = tk.Frame(main_frame)
 btn_frame.pack(pady=5)
 
 add_btn = tk.Button(btn_frame, text="Add Task", command=add_task, bg="#4CAF50", fg="white", width=12)
@@ -103,14 +109,14 @@ edit_btn = tk.Button(btn_frame, text="Edit Task", command=edit_task, bg="#FF9800
 edit_btn.grid(row=0, column=3, padx=5)
 
 # Scrollbar and Listbox
-list_frame = tk.Frame(root)
-list_frame.pack(pady=10, fill=tk.BOTH, expand=True)
+list_frame = tk.Frame(main_frame)
+list_frame.pack(pady=10)
 
 scrollbar = tk.Scrollbar(list_frame)
 scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 
-listbox = tk.Listbox(list_frame, font=("Arial", 12), yscrollcommand=scrollbar.set)
-listbox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+listbox = tk.Listbox(list_frame, width=60, height=15, font=("Arial", 12), yscrollcommand=scrollbar.set)
+listbox.pack(side=tk.LEFT, fill=tk.Y)
 
 scrollbar.config(command=listbox.yview)
 
