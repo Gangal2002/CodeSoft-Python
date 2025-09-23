@@ -1,76 +1,77 @@
 import tkinter as tk
 from tkinter import messagebox
 
-def click(button_text):
-    """Handles button clicks."""
-    current = entry.get()
-    if button_text == "=":
-        try:
-            result = str(eval(current))
-            entry.delete(0, tk.END)
-            entry.insert(tk.END, result)
-        except Exception:
-            messagebox.showerror("Error", "Invalid Input")
-    elif button_text == "C":
-        entry.delete(0, tk.END)
-    else:
-        entry.insert(tk.END, button_text)
+# ------------------ Functions ------------------
+allowed_chars = "0123456789+-*/."
+
+def click_button(value):
+    current = entry_display.get()
+    entry_display.delete(0, tk.END)
+    entry_display.insert(0, current + str(value))
+
+def clear_display():
+    entry_display.delete(0, tk.END)
+
+def calculate(event=None):
+    try:
+        result = eval(entry_display.get())
+        entry_display.delete(0, tk.END)
+        entry_display.insert(0, str(result))
+    except:
+        messagebox.showerror("Error", "Invalid Input")
+
+def validate_input(event):
+    if (event.char not in allowed_chars and 
+        event.keysym not in ("Return", "BackSpace", "Delete")):
+        return "break"
 
 # ------------------ GUI Setup ------------------
 root = tk.Tk()
-root.title("Calculator")
+root.title("🧮 Calculator")
 root.geometry("400x500")
-root.resizable(True, True)
+root.minsize(400, 500)
+root.maxsize(800, 700)
+root.eval('tk::PlaceWindow . center')
 
-# Validation function for Entry widget
-def validate_input(new_value):
-    allowed_chars = "0123456789.+-*/"
-    for char in new_value:
-        if char not in allowed_chars:
-            return False
-    return True
+# ------------------ Outer Frame (centered) ------------------
+outer_frame = tk.Frame(root)
+outer_frame.pack(anchor="n", pady=20)  # Top-center alignment
 
-vcmd = (root.register(validate_input), "%P")
+# ------------------ Inner Frame ------------------
+main_frame = tk.Frame(outer_frame)
+main_frame.pack()  # keeps content compact and centered
 
-# Entry display with validation
-entry = tk.Entry(root, font=("Arial", 24), borderwidth=2, relief="ridge",
-                 justify="right", validate="key", validatecommand=vcmd)
-entry.grid(row=0, column=0, columnspan=4, sticky="nsew", padx=5, pady=5)
-entry.focus_set()
+# Heading
+tk.Label(main_frame, text="🧮 Calculator", font=("Arial", 20, "bold")).pack(pady=10)
 
-# Button layout
+# Display Entry
+entry_display = tk.Entry(main_frame, width=20, font=("Arial", 20), justify="right")
+entry_display.pack(pady=10)
+entry_display.bind("<Key>", validate_input)
+entry_display.bind("<Return>", calculate)
+
+# Buttons Layout
 buttons = [
-    ["7", "8", "9", "/"],
-    ["4", "5", "6", "*"],
-    ["1", "2", "3", "-"],
-    ["0", ".", "=", "+"],
-    ["C"]
+    ['7', '8', '9', '/'],
+    ['4', '5', '6', '*'],
+    ['1', '2', '3', '-'],
+    ['0', '.', '=', '+']
 ]
 
-# Create buttons (mouse clicks)
-for i, row in enumerate(buttons):
-    for j, text in enumerate(row):
-        if text == "C":
-            btn = tk.Button(root, text=text, font=("Arial", 18), command=lambda t=text: click(t))
-            btn.grid(row=i+1, column=0, columnspan=4, sticky="nsew", padx=2, pady=2)
+for row in buttons:
+    row_frame = tk.Frame(main_frame)
+    row_frame.pack(pady=5)
+    for btn_text in row:
+        if btn_text == "=":
+            b = tk.Button(row_frame, text=btn_text, width=5, height=2, font=("Arial", 14),
+                          bg="#4CAF50", fg="white", command=calculate)
         else:
-            btn = tk.Button(root, text=text, font=("Arial", 18), command=lambda t=text: click(t))
-            btn.grid(row=i+1, column=j, sticky="nsew", padx=2, pady=2)
+            b = tk.Button(row_frame, text=btn_text, width=5, height=2, font=("Arial", 14),
+                          command=lambda val=btn_text: click_button(val))
+        b.pack(side=tk.LEFT, padx=5)
 
-# Make grid cells expandable
-for i in range(6):
-    root.grid_rowconfigure(i, weight=1)
-for j in range(4):
-    root.grid_columnconfigure(j, weight=1)
-
-# Keyboard bindings (Enter and Clear)
-def key_press(event):
-    if event.keysym == "Return":
-        click("=")
-    elif event.keysym in ("BackSpace", "Delete"):
-        click("C")
-    # All other keys handled by Entry validation
-
-root.bind("<Key>", key_press)
+# Clear button (full width under all buttons)
+tk.Button(main_frame, text="C", width=23, height=2, font=("Arial", 14),
+          bg="#f44336", fg="white", command=clear_display).pack(pady=10)
 
 root.mainloop()
