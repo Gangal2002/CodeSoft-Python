@@ -1,43 +1,47 @@
-## 🐍 CodeSoft Python Internship Projects
+# 🐍 CodeSoft Python Internship Projects  
 
-This repository contains my Python internship tasks completed during my **4-week internship at CodeSoft**.
-Each project is presented with a **live demo** for easy exploration.
-
----
-
-### 🌐 Live Demo Page
-
-🎯 **Experience all Python projects in one place:**
-👉 [**Click Here for Live Demo**](https://Gangal2002.github.io/CodeSoft-Python/)
+This repository contains all my **Python projects** developed during my **4-week internship at CodeSoft**.  
+Each task demonstrates practical applications of Python programming concepts such as GUI development, logic building, and file handling.  
 
 ---
 
-### 🚀 Projects Included
-
-| No. | Project Name                   | Description                                                                  | Live Demo                                                  |
-| :-: | :----------------------------- | :--------------------------------------------------------------------------- | :--------------------------------------------------------- |
-|  1  | 🧮 **Calculator (GUI)**        | Perform basic arithmetic operations using a simple Tkinter-based calculator. | [Live Demo](https://Gangal2002.github.io/CodeSoft-Python/) |
-|  2  | 📇 **Contact Book**            | Manage and organize contacts with add, update, and delete options.           | [Live Demo](https://Gangal2002.github.io/CodeSoft-Python/) |
-|  3  | 🔐 **Password Generator**      | Generate secure random passwords of custom lengths.                          | [Live Demo](https://Gangal2002.github.io/CodeSoft-Python/) |
-|  4  | ✊ **Rock Paper Scissors Game** | Play an interactive game against the computer using Python GUI.              | [Live Demo](https://Gangal2002.github.io/CodeSoft-Python/) |
-|  5  | 📝 **To-Do List App**          | Track and manage your daily tasks easily with a GUI interface.               | [Live Demo](https://Gangal2002.github.io/CodeSoft-Python/) |
+## 🌐 Live Demo Page  
+🎯 Explore all my Python projects together here:  
+👉 [**Live Demo Collection**](https://Gangal2002.github.io/CodeSoft-Python/)  
 
 ---
 
-### 🧠 Technologies Used
+## 🚀 Individual Project Demos  
 
-* Python
-* Tkinter (GUI Library)
-* File Handling
-* Random Module
+| No. | Project Name | Description | Live Demo |
+|:---:|:--------------|:-------------|:-----------|
+| 1 | 🧮 **Calculator (GUI)** | A Tkinter-based calculator that performs basic arithmetic operations. | [Run Demo](https://your-calculator-demo-link-here.repl.co) |
+| 2 | 📇 **Contact Book** | A simple contact management app to add, search, update, and delete contact information. | [Run Demo](https://your-contact-book-demo-link-here.repl.co) |
+| 3 | 🔐 **Password Generator** | Random password generator for creating secure passwords of custom length and strength. | [Run Demo](https://your-password-generator-demo-link-here.repl.co) |
+| 4 | ✊ **Rock Paper Scissors** | A fun GUI game where you play Rock-Paper-Scissors against the computer. | [Run Demo](https://your-rock-paper-scissors-demo-link-here.repl.co) |
+| 5 | 📝 **To-Do List App** | A Tkinter-based to-do list to manage daily tasks with add, delete, and save options. | [Run Demo](https://your-todo-list-demo-link-here.repl.co) |
 
 ---
 
-### 🏁 Internship Details
+## 🧠 Technologies Used  
+- Python  
+- Tkinter (GUI)  
+- Random module  
+- File handling  
 
-**Organization:** CodeSoft
-**Internship Title:** Python Programming
-**Duration:** 4 Weeks
-**Role:** Python Developer Intern
+---
+
+## 🏁 Internship Details  
+**Organization:** CodeSoft  
+**Role:** Python Developer Intern  
+**Duration:** 4 Weeks  
+**Domain:** Python Programming  
+
+---
+
+## 🏆 Highlights  
+✅ Completed all assigned internship tasks  
+✅ Each project includes a functional GUI  
+✅ Hosted interactive live demos online  
 
 ---
