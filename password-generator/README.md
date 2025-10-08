@@ -20,8 +20,6 @@ The app allows users to **generate strong random passwords**, **copy them to cli
 
 ## 📸 Screenshot
 
-- Live Demo: [Open Password generator]()
-
 ### Password Generator App View
 
 <img width="1920" height="510" alt="Screenshot (86)" src="https://github.com/user-attachments/assets/dec52b09-f5a3-4af3-b34a-ede78c4ea98b" />
