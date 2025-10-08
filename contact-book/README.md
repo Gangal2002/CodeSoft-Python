@@ -20,8 +20,6 @@ The app allows users to **add, update, delete, search, and view contact details*
 
 ## 📸 Screenshot
 
-- Live Demo: [Open Contact Book]()
-
 ### Contact Book App View
 
 <img width="1920" height="802" alt="Screenshot (89)" src="https://github.com/user-attachments/assets/5aaee28e-0591-4b5f-80cc-216c1275d07c" />
