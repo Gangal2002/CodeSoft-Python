@@ -20,8 +20,6 @@ The app allows users to **play multiple rounds against the computer**, with **sc
 
 ## 📸 Screenshot
 
-- Live Demo: [Open Rock-Paper-Scissors]()
-
 ### Rock-Paper-Scissors Game View
 
 <img width="1920" height="555" alt="Screenshot (87)" src="https://github.com/user-attachments/assets/0fa86599-16da-4392-ac3e-befaa632cf59" />
