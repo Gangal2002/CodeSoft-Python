@@ -18,8 +18,6 @@ It allows users to **add, edit, mark as done, delete, and track tasks** in a cle
 
 ## 📸 Screenshot  
 
-- Live Demo: [Open To-Do List]()
-
 ### To-Do List App View  
 
 <img width="1920" height="701" alt="Screenshot (83)" src="https://github.com/user-attachments/assets/7d3cf2a7-3140-45a1-ba10-a91069be28ba" />
