@@ -3,69 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CodeSoft Python Tasks</title>
+  <title>CodeSoft Python Internship</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f7f9fc;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #f9fbe7);
+      color: #222;
       text-align: center;
-      padding: 40px;
+      padding: 40px 20px;
     }
     h1 {
-      color: #2c3e50;
-      margin-bottom: 30px;
+      color: #00695c;
+      margin-bottom: 10px;
+      font-size: 2.2rem;
     }
-    .project {
+    h2 {
+      color: #004d40;
+      margin-bottom: 30px;
+      font-weight: normal;
+    }
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 500px;
+      border-radius: 16px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      padding: 25px;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: #00796b;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 15px;
+      color: #555;
+      min-height: 60px;
     }
     .btn {
       display: inline-block;
       padding: 10px 20px;
-      margin: 10px;
+      margin-top: 10px;
       border-radius: 8px;
       text-decoration: none;
       color: white;
       background: #0078d7;
-      transition: 0.3s;
+      transition: background 0.3s;
     }
     .btn:hover { background: #005fa3; }
+    footer {
+      margin-top: 50px;
+      color: #444;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
-  <h1>Python Task Collection - CodeSoft Internship</h1>
-  <p>Created by <strong>Ganga L</strong></p>
+  <h1>CodeSoft Python Internship Projects</h1>
+  <h2>Developed by <strong>Ganga L</strong></h2>
 
-  <div class="project">
-    <h2>Calculator (GUI)</h2>
-    <a class="btn" href="https://github.com/Gangal2002/CodeSoft-Python/tree/main/calculator" target="_blank">View Code</a>
+  <div class="project-container">
+    <div class="card">
+      <h3>🧮 Calculator (GUI)</h3>
+      <p>A Tkinter-based calculator for basic arithmetic operations.</p>
+      <a class="btn" href="https://your-calculator-demo-link-here.repl.co" target="_blank">Run Live Demo</a>
+    </div>
+
+    <div class="card">
+      <h3>📇 Contact Book</h3>
+      <p>Manage contacts — add, update, search, and delete with ease.</p>
+      <a class="btn" href="https://your-contact-book-demo-link-here.repl.co" target="_blank">Run Live Demo</a>
+    </div>
+
+    <div class="card">
+      <h3>🔐 Password Generator</h3>
+      <p>Generate strong, random passwords of any length securely.</p>
+      <a class="btn" href="https://your-password-generator-demo-link-here.repl.co" target="_blank">Run Live Demo</a>
+    </div>
+
+    <div class="card">
+      <h3>✊ Rock Paper Scissors</h3>
+      <p>Play Rock-Paper-Scissors against the computer using GUI.</p>
+      <a class="btn" href="https://your-rock-paper-scissors-demo-link-here.repl.co" target="_blank">Run Live Demo</a>
+    </div>
+
+    <div class="card">
+      <h3>📝 To-Do List App</h3>
+      <p>Organize your daily tasks — add, delete, and save tasks easily.</p>
+      <a class="btn" href="https://your-todo-list-demo-link-here.repl.co" target="_blank">Run Live Demo</a>
+    </div>
   </div>
 
-  <div class="project">
-    <h2>Contact Book</h2>
-    <a class="btn" href="https://github.com/Gangal2002/CodeSoft-Python/tree/main/contact-book" target="_blank">View Code</a>
-  </div>
-
-  <div class="project">
-    <h2>Password Generator</h2>
-    <a class="btn" href="https://github.com/Gangal2002/CodeSoft-Python/tree/main/password-generator" target="_blank">View Code</a>
-  </div>
-
-  <div class="project">
-    <h2>Rock Paper Scissors Game</h2>
-    <a class="btn" href="https://github.com/Gangal2002/CodeSoft-Python/tree/main/rock-paper-scissors" target="_blank">View Code</a>
-  </div>
-
-  <div class="project">
-    <h2>To-Do List (GUI)</h2>
-    <a class="btn" href="https://github.com/Gangal2002/CodeSoft-Python/tree/main/to-do-list" target="_blank">View Code</a>
-  </div>
-
-  <p>⭐ All tasks completed as part of my <strong>CodeSoft Python Internship</strong></p>
+  <footer>
+    <p>© 2025 Ganga L | CodeSoft Python Internship</p>
+  </footer>
 </body>
 </html>
